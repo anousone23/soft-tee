@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --clay-cream: #FFF1E6;
+  --clay-paper: #FFFBF5;
+  --clay-ink: #3A2418;
+  --clay-ink-soft: #6B4A3A;
+  --clay-peach: #FDBCB4;
+  --clay-mint: #98D8C8;
+  --clay-butter: #FFE066;
+  --clay-lilac: #C7B8FF;
+  --clay-pink: #FFB7CE;
+}
+
+@theme inline {
+  --color-clay-cream: var(--clay-cream);
+  --color-clay-paper: var(--clay-paper);
+  --color-clay-ink: var(--clay-ink);
+  --color-clay-ink-soft: var(--clay-ink-soft);
+  --color-clay-peach: var(--clay-peach);
+  --color-clay-mint: var(--clay-mint);
+  --color-clay-butter: var(--clay-butter);
+  --color-clay-lilac: var(--clay-lilac);
+  --color-clay-pink: var(--clay-pink);
+
+  --font-sans: var(--font-nunito), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-fredoka), var(--font-nunito), system-ui, sans-serif;
+}
+
+@layer utilities {
+  .clay-shadow { box-shadow: 4px 4px 0 var(--clay-ink); }
+  .clay-shadow-lg { box-shadow: 6px 6px 0 var(--clay-ink); }
+  .clay-shadow-sm { box-shadow: 3px 3px 0 var(--clay-ink); }
+  .clay-shadow-none { box-shadow: 0 0 0 var(--clay-ink); }
+}
+
+html, body {
+  background: var(--clay-cream);
+  color: var(--clay-ink);
+}
+
+body {
+  font-family: var(--font-sans);
+}
